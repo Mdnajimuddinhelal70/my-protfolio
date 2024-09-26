@@ -1,0 +1,76 @@
+/* Navbar Container */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background-color: #250202; /* Dark background */
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Logo Styling */
+  .navbar-logo {
+    width: 120px;
+    cursor: pointer;
+  }
+  
+  /* Menu Styling */
+  .nav-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 40px;
+  }
+  
+  .nav-menu li {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  
+  .nav-menu li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-menu li a:hover {
+    color: #ff6347; /* Hover effect with a warm color */
+  }
+  
+  /* Connect Button */
+  .nav-connect .connect-btn {
+    background-color: #400248; /* Tomato color for button */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: 0.5s;
+  }
+  
+  .nav-connect .connect-btn:hover {
+    background-color: #900692; 
+    transform: scale(1.05);
+  }
+  
+  /* Responsive Navbar for smaller screens */
+  @media (max-width: 768px) {
+    .nav-menu {
+      display: none;
+    }
+  
+    .navbar {
+      justify-content: space-between;
+    }
+  
+    .nav-connect .connect-btn {
+      padding: 8px 15px;
+      font-size: 14px;
+    }
+  }
+  

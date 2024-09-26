@@ -1,0 +1,111 @@
+:root {
+    --box-shadow: 5px 5px 10px 10px rgba(101, 175, 10, 0.5);
+    --bg-color: rgb(40,47,97);
+}
+
+.home {
+    height: 80vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 0;
+}
+
+.home .left {
+    background-color: var(--bg-color);
+    width: 650px;
+    text-align: center;
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid yellow;
+    box-shadow: var(--box-shadow);
+}
+
+.home .right .img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.my-name1, .my-namep, .my-name {
+    background: linear-gradient(270deg, #08DF84 10%, #FF157F 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.home .right .img img {
+    height: 250px;
+    width: 250px;
+    border-radius: 100%;
+    animation-name: superman;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes superman {
+    0% {
+        border-color: blue;
+        transform: translate(0,0px);
+        box-shadow: 10px 10px 100px 50px blue;
+    }
+    25% {
+        border-color: rgb(239, 244, 11);     
+        box-shadow: 10px 10px 100px 50px rgb(239, 244, 11);
+    }
+    50% {
+        border-color: rgb(12, 12, 199);
+        transform: translate(0,10px);
+        box-shadow: 10px 10px 100px 50px rgb(12, 12, 199);
+    }
+    70% {
+        border-color: rgb(130, 217, 160);     
+        box-shadow: 10px 10px 100px 50px rgb(130, 217, 160);
+    }
+    100% {
+        border-color: rgb(50, 55, 205);
+        transform: translate(0, -10px);
+        box-shadow: 10px 10px 100px 50px rgb(50, 55, 205);
+    }
+}
+
+/* Media query for small devices */
+@media (max-width: 768px) {
+    .home {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top:0px;
+    }
+
+    .home .left {
+        width: 100%;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    .home .right .img img {
+        height: 200px;
+        width: 200px;
+    }
+
+    .my-name1, .my-name {
+   font-size: 40px;
+}
+}
+
+@media (max-width: 480px) {
+    .home {
+        padding-top: 80px;
+    }
+
+    .home .left {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .home .right .img img {
+        height: 180px;
+        width: 180px;
+    }
+}

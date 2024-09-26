@@ -1,0 +1,26 @@
+[
+    {
+        "img": "../src/assets/latest-img/latest1.jpg",
+        "name": "Product One",
+        "category": "Electronics",
+        "total": 100,
+        "status": "Available",
+        "description": "High-quality electronic gadget with multiple features."
+    },
+    {
+        "img": "../src/assets/latest-img/latest2.jpg",
+        "name": "Product Two",
+        "category": "Home Appliances",
+        "total": 50,
+        "status": "Out of Stock",
+        "description": "Essential appliance for modern living with energy efficiency."
+    },
+    {
+        "img": "../src/assets/latest-img/latest3.jpg",
+        "name": "Product Three",
+        "category": "Furniture",
+        "total": 200,
+        "status": "Available",
+        "description": "Stylish and comfortable furniture piece for any home."
+    }
+]

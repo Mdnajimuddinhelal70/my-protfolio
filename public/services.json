@@ -1,0 +1,17 @@
+[
+  {
+   
+    "s_name": "Web Development",
+    "s_desc": "Create visually stunning and responsive websites that adapt seamlessly to various screen sizes and devices."
+  },
+  {
+   
+    "s_name": "React Development",
+    "s_desc": "Build modern and dynamic user interfaces using React, a powerful JavaScript library for frontend development."
+  },
+  {
+    
+    "s_name": "MERN Stack Development",
+    "s_desc": "Full-stack development using MongoDB, Express.js, React, and Node.js. Building scalable and robust web applications."
+  }
+]
