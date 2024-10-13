@@ -1,35 +1,43 @@
-import { FaUser } from 'react-icons/fa';
-import footerLogo from '../../assets/my-pic/footerlogo.webp';
-import './Footer.css';
+import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className='footer'>
-      <div className="footer-top">
-        <div className="footer-top-left">
-          <img src={footerLogo} alt="Footer Logo" />
-          <p>
-            I am a skilled frontend developer with a passion for creating modern and user-friendly websites and web applications. My expertise lies in HTML, CSS, JavaScript, and React.js, with a focus on crafting engaging and intuitive user experiences.
-          </p>
+    <footer className="bg-black text-white py-8">
+      <div className="container mx-auto text-center">
+        <h3 className="text-2xl font-semibold mb-2">Let's Work Together</h3>
+        <h1 className="text-xl mb-4">najimuddinhelal96@gmail.com</h1>
+        <div className="flex justify-center space-x-6 mb-4">
+          <a
+            href="https://linkedin.com"
+            target="_blank"
+            rel="noreferrer"
+            className="text-2xl hover:text-blue-500"
+          >
+            <FaLinkedin />
+          </a>
+          <a
+            href="https://facebook.com"
+            target="_blank"
+            rel="noreferrer"
+            className="text-2xl hover:text-blue-600"
+          >
+            <FaFacebook />
+          </a>
+          <a
+            href="https://github.com"
+            target="_blank"
+            rel="noreferrer"
+            className="text-2xl hover:text-gray-500"
+          >
+            <FaGithub />
+          </a>
         </div>
-        <div className="footer-top-right">
-          <div className="footer-email-input">
-            <FaUser size={24} color="#a0a0a0" />
-            <input type="text" placeholder='Enter your email' />
-          </div>
-          <div className="footer-subscribe">Subscribe</div>
-        </div>
+        <p className="text-sm text-gray-400">
+          &copy; {new Date().getFullYear()} Najimuddin Helal. All rights
+          reserved.
+        </p>
       </div>
-      <hr />
-      <div className="footer-bottom">
-        <p className="footer-bottom-left">&copy; 2024 Your Company Name. All rights reserved.</p>
-        <div className="footer-bottom-right">
-          <p>Term of Services</p>
-          <p>Privacy Policy</p>
-          <p>Connect with me</p>
-        </div>
-      </div>
-    </div>
+    </footer>
   );
 };
 

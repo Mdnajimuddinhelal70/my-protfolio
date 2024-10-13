@@ -13,7 +13,7 @@
 
 .about-title h1 {
     padding: 0px 30px;
-    font-size: 80px;
+    font-size: 60px;
     font-weight: 600;
 }
 
@@ -45,6 +45,7 @@
 }
 
 
+
 .about-skill p {
     min-width: 150px;
     font-size: 24px;
@@ -54,7 +55,7 @@
     flex: 1;
   }
 
-.about-skill hr {
+  .about-skill hr {
     outline: none;
     border: none;
     width: 100%;
@@ -69,41 +70,29 @@
 }
  
 
-/* Responsive styling */
 
+/* Responsive styling */
 /* For tablets and small laptops */
 @media (max-width: 1024px) {
     .about {
-        margin: 60px 100px;
+        margin: 40px 40px;
     }
 
     .about-title h1 {
-        font-size: 60px;
+        font-size: 48px;
+        text-align: center;
     }
 
     .about-sections {
         flex-direction: column;
         gap: 40px;
+        align-items: center;
+        text-align: center;
     }
 
     .about-para {
         font-size: 20px;
-    }
-}
-
-/* For mobile devices */
-@media (max-width: 768px) {
-    .about {
-        margin: 40px 50px;
-        gap: 60px;
-    }
-
-    .about-title h1 {
-        font-size: 50px;
-    }
-
-    .about-sections {
-        gap: 30px;
+        text-align: center;
     }
 
     .about-skill p {
@@ -112,42 +101,79 @@
 
     .about-skills,
     .about-right {
-        gap: 40px;
+        gap: 30px;
     }
 
-    .about-achievement h1 {
-        font-size: 50px;
-    }
-
-    .about-achievement p {
-        font-size: 18px;
+    .about-skill hr {
+        height: 6px;
+        width: 80%;
     }
 }
 
-/* For small mobile devices */
-@media (max-width: 480px) {
+/* For mobile devices */
+@media (max-width: 768px) {
     .about {
-        margin: 20px 30px;
+        margin: 20px 20px;
         gap: 40px;
     }
 
     .about-title h1 {
         font-size: 40px;
+        text-align: center;
+    }
+
+    .about-sections {
+        gap: 30px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 
     .about-skill p {
         font-size: 18px;
     }
 
+    .about-skills,
+    .about-right {
+        gap: 30px;
+    }
+
+    .about-skill hr {
+        height: 6px;
+        width: 80%; /* Reduced width for better fit on small screens */
+    }
+}
+
+/* For small mobile devices */
+@media (max-width: 480px) {
+    .about {
+        margin: 10px 10px;
+        gap: 30px;
+    }
+
+    .about-title h1 {
+        font-size: 32px;
+        text-align: center;
+    }
+
     .about-sections {
+        gap: 20px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-skill p {
+        font-size: 16px;
+    }
+
+    .about-skills,
+    .about-right {
         gap: 20px;
     }
 
-    .about-achievement h1 {
-        font-size: 40px;
-    }
-
-    .about-achievement p {
-        font-size: 16px;
+    .about-skill hr {
+        height: 4px;
+        width: 100%; /* Full width for very small devices */
     }
 }
