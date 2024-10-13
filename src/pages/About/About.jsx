@@ -31,7 +31,7 @@ const About = () => {
         </div>
       </div>
 
-      <h1 className="text-center text-5xl font-extrabold mt-20">My Skill</h1>
+      <h1 className="text-center text-4xl font-extrabold mt-20">~~My Skill~~</h1>
 
       <div className="about-skills">
         <div className="about-skill-column">
@@ -83,12 +83,16 @@ const About = () => {
             <hr style={{ width: "85%" }} />
           </div>
           <div className="about-skill">
+            <p>TanStack Query</p>
+            <hr style={{ width: "65%" }} />
+          </div>
+          <div className="about-skill">
             <p>Firebase</p>
             <hr style={{ width: "85%" }} />
           </div>
           <div className="about-skill">
             <p>React Router</p>
-            <hr style={{ width: "70%" }} />
+            <hr style={{ width: "80%" }} />
           </div>
           <div className="about-skill">
             <p>JWT</p>
