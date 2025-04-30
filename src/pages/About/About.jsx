@@ -35,7 +35,7 @@ const About = () => {
         </div>
       </div>
                      {/* Skill section */}
-      <h1 className="text-center text-4xl font-extrabold mt-20">~~My Skill~~</h1>
+      <h1 className="text-center items-center text-4xl font-extrabold mt-20">~~My Skill~~</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-[80%] items-center justify-center mx-auto mt-7">
         <div className="space-y-4">
           {[
@@ -46,11 +46,12 @@ const About = () => {
             { name: "React JS", width: "w-[90%]" },
             { name: "Next JS", width: "w-[50%]" },
             { name: "MongoDB", width: "w-[70%]" },
+            { name: "Node JS", width: "w-[60%]" },
           ].map((skill, idx) => (
-            <div key={idx}>
+            <div key={idx} className="transition-transform duration-300 hover:scale-x-105 cursor-pointer">
               <p className="font-semibold text-white">{skill.name}</p>
               <div
-                className={`h-2 ${skill.width} bg-gradient-to-r from-[#DF8908] to-[#B415FF] rounded-full mt-1 transition-transform duration-300 hover:scale-x-105 cursor-pointer`}
+                className={`h-2 ${skill.width} bg-gradient-to-r from-[#DF8908] to-[#B415FF] rounded-full mt-1`}
               ></div>
             </div>
           ))}
@@ -58,7 +59,6 @@ const About = () => {
 
         <div className="space-y-4">
           {[
-            { name: "Node JS", width: "w-[60%]" },
             { name: "Express JS", width: "w-[50%]" },
             { name: "GitHub", width: "w-[70%]" },
             { name: "Axios", width: "w-[85%]" },
@@ -67,10 +67,10 @@ const About = () => {
             { name: "React Router", width: "w-[80%]" },
             { name: "JWT", width: "w-[60%]" },
           ].map((skill, idx) => (
-            <div key={idx}>
+            <div key={idx} className="transition-transform duration-300 hover:scale-105 cursor-pointer">
               <p className="font-semibold text-white">{skill.name}</p>
               <div
-                className={`h-2 ${skill.width} bg-gradient-to-r from-[#DF8908] to-[#B415FF] rounded-full mt-1 transition-transform duration-300 hover:scale-105 cursor-pointer`}
+                className={`h-2 ${skill.width} bg-gradient-to-r from-[#DF8908] to-[#B415FF] rounded-full mt-1`}
               ></div>
             </div>
           ))}

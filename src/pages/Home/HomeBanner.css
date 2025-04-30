@@ -35,8 +35,6 @@
 }
 
 .home .right .img img {
-    height: 250px;
-    width: 250px;
     border-radius: 100%;
     animation-name: superman;
     animation-duration: 3s;

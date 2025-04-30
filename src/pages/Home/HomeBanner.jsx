@@ -1,5 +1,5 @@
-import myImg from '../../assets/my-pic/najim.jpg'
-import './HomeBanner.css'
+import myImg from '../../assets/my-pic/najim.jpg';
+import './HomeBanner.css';
 const HomeBanner = () => {
     return (
         <>
@@ -12,7 +12,7 @@ const HomeBanner = () => {
             </div>
             <div className="right">
              <div className="img">
-                <img src={myImg} alt="" />
+                <img className='w-60 h-60 md:w-72 md:h-72 rounded-full overflow-hidden border-4 border-blue-500 shadow-lg hover:scale-105 transition-transform duration-500' src={myImg} alt="" />
              </div>
             </div>
            </div> 
