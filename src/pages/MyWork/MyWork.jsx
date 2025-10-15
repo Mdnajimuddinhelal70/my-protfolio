@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./MyWork.css";
 
 const MyWork = () => {
@@ -19,9 +19,11 @@ const MyWork = () => {
       - Admin Privileges: Admins have the ability to promote or demote users and manage all aspects of the platform, including sales reports and advertisements.
       - Responsive Design: The interface is crafted using Tailwind CSS and DaisyUI for a modern, user-friendly experience across devices.
       - State Management: Efficient data handling and caching are achieved using TanStack Query and Axios.`,
-      liveLink: "https://b9-a12-project.web.app/",
-      clientLink: "https://github.com/Mdnajimuddinhelal70/medicine-management-client",
-      serverLink: "https://github.com/Mdnajimuddinhelal70/medicine-management-server",
+      liveLink: "https://medicine-management-78803.web.app",
+      clientLink:
+        "https://github.com/Mdnajimuddinhelal70/nm-medicine-management-system/tree/main/client",
+      serverLink:
+        "https://github.com/Mdnajimuddinhelal70/nm-medicine-management-system/tree/main/server",
     },
     {
       image: "https://i.ibb.co/S7WDPK1/latest1.png",
@@ -35,8 +37,10 @@ const MyWork = () => {
       - CRUD Operations: Manage volunteer data and tasks with MongoDB.
       - Responsive UI: Designed with TailwindCSS and DaisyUI for a clean, mobile-friendly interface.`,
       liveLink: "https://b9-a11-assignment-f8c48.web.app/",
-      clientLink: "https://github.com/Mdnajimuddinhelal70/volunteer-management-client",
-      serverLink: "https://github.com/Mdnajimuddinhelal70/volunteer-management-server",
+      clientLink:
+        "https://github.com/Mdnajimuddinhelal70/volunteer-management-client",
+      serverLink:
+        "https://github.com/Mdnajimuddinhelal70/volunteer-management-server",
     },
     {
       image: "https://i.ibb.co/XLKrS9P/latest2.jpg",
@@ -52,8 +56,10 @@ const MyWork = () => {
       - Modern UI/UX: The application’s frontend is styled using Tailwind CSS and DaisyUI to provide a responsive and aesthetically pleasing design.
       - Icons & Alerts: React Icons are used to enhance the interface, and SweetAlert2 is integrated for clean and responsive pop-up notifications.`,
       liveLink: "https://b9-a10-project.web.app/",
-      clientLink: "https://github.com/Mdnajimuddinhelal70/craft-glass-art-client",
-      serverLink: "https://github.com/Mdnajimuddinhelal70/craft-glass-art-server",
+      clientLink:
+        "https://github.com/Mdnajimuddinhelal70/craft-glass-art-client",
+      serverLink:
+        "https://github.com/Mdnajimuddinhelal70/craft-glass-art-server",
     },
   ];
 
@@ -124,7 +130,9 @@ const MyWork = () => {
         <div className="modal modal-open">
           <div className="modal-box bg-white text-black">
             <h3 className="font-bold text-lg">{selectedProject.name}</h3>
-            <p className="py-4 whitespace-pre-line">{selectedProject.description}</p>
+            <p className="py-4 whitespace-pre-line">
+              {selectedProject.description}
+            </p>
             <div className="modal-action">
               <button onClick={() => setSelectedProject(null)} className="btn">
                 Close
